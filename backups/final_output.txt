@@ -1,0 +1,131 @@
+Found Path in 57 seconds w/ goal bias 0.01
+Found Path in 7 seconds w/ goal bias 0.01
+Found Path in 5 seconds w/ goal bias 0.01
+
+Found Path in 7 seconds w/ goal bias 0.06
+Found Path in 20 seconds w/ goal bias 0.06
+Found Path in 41 seconds w/ goal bias 0.06
+Found Path in 85 seconds w/ goal bias 0.06
+Found Path in 7 seconds w/ goal bias 0.06
+Found Path in 2 seconds w/ goal bias 0.06
+Found Path in 145 seconds w/ goal bias 0.06
+Found Path in 10 seconds w/ goal bias 0.06
+Found Path in 15 seconds w/ goal bias 0.06
+
+Found Path in 45 seconds w/ goal bias 0.11
+Found Path in 3 seconds w/ goal bias 0.11
+Found Path in 40 seconds w/ goal bias 0.11
+Found Path in 18 seconds w/ goal bias 0.11
+Found Path in 3 seconds w/ goal bias 0.11
+Found Path in 100 seconds w/ goal bias 0.11
+Found Path in 14 seconds w/ goal bias 0.11
+Found Path in 12 seconds w/ goal bias 0.11
+
+Found Path in 20 seconds w/ goal bias 0.16
+Found Path in 16 seconds w/ goal bias 0.16
+Found Path in 9 seconds w/ goal bias 0.16
+Found Path in 6 seconds w/ goal bias 0.16
+Found Path in 5 seconds w/ goal bias 0.16
+Found Path in 8 seconds w/ goal bias 0.16
+Found Path in 8 seconds w/ goal bias 0.16
+Found Path in 38 seconds w/ goal bias 0.16
+Found Path in 9 seconds w/ goal bias 0.16
+
+Found Path in 39 seconds w/ goal bias 0.21
+Found Path in 11 seconds w/ goal bias 0.21
+Found Path in 41 seconds w/ goal bias 0.21
+Found Path in 35 seconds w/ goal bias 0.21
+Found Path in 12 seconds w/ goal bias 0.21
+Found Path in 120 seconds w/ goal bias 0.21
+
+Found Path in 7 seconds w/ goal bias 0.26
+Found Path in 7 seconds w/ goal bias 0.26
+Found Path in 110 seconds w/ goal bias 0.26
+Found Path in 6 seconds w/ goal bias 0.26
+Found Path in 48 seconds w/ goal bias 0.26
+
+Found Path in 41 seconds w/ goal bias 0.31
+Found Path in 21 seconds w/ goal bias 0.31
+Found Path in 172 seconds w/ goal bias 0.31
+Found Path in 9 seconds w/ goal bias 0.31
+Found Path in 5 seconds w/ goal bias 0.31
+Found Path in 64 seconds w/ goal bias 0.31
+
+Found Path in 19 seconds w/ goal bias 0.36
+Found Path in 7 seconds w/ goal bias 0.36
+Found Path in 6 seconds w/ goal bias 0.36
+Found Path in 14 seconds w/ goal bias 0.36
+Found Path in 6 seconds w/ goal bias 0.36
+Found Path in 27 seconds w/ goal bias 0.36
+Found Path in 4 seconds w/ goal bias 0.36
+Found Path in 111 seconds w/ goal bias 0.36
+
+Found Path in 169 seconds w/ goal bias 0.41
+Found Path in 112 seconds w/ goal bias 0.41
+Found Path in 10 seconds w/ goal bias 0.41
+Found Path in 137 seconds w/ goal bias 0.41
+Found Path in 7 seconds w/ goal bias 0.41
+
+Found Path in 10 seconds w/ goal bias 0.46
+Found Path in 116 seconds w/ goal bias 0.46
+Found Path in 71 seconds w/ goal bias 0.46
+Found Path in 107 seconds w/ goal bias 0.46
+Found Path in 7 seconds w/ goal bias 0.46
+
+Found Path in 15 seconds w/ goal bias 0.51
+Found Path in 35 seconds w/ goal bias 0.51
+Found Path in 2 seconds w/ goal bias 0.51
+Found Path in 22 seconds w/ goal bias 0.51
+Found Path in 18 seconds w/ goal bias 0.51
+Found Path in 2 seconds w/ goal bias 0.51
+
+Found Path in 74 seconds w/ goal bias 0.56
+Found Path in 179 seconds w/ goal bias 0.56
+Found Path in 30 seconds w/ goal bias 0.56
+Found Path in 7 seconds w/ goal bias 0.56
+Found Path in 123 seconds w/ goal bias 0.56
+Found Path in 22 seconds w/ goal bias 0.56
+
+Found Path in 151 seconds w/ goal bias 0.61
+Found Path in 9 seconds w/ goal bias 0.61
+Found Path in 133 seconds w/ goal bias 0.61
+Found Path in 5 seconds w/ goal bias 0.61
+
+Found Path in 4 seconds w/ goal bias 0.66
+Found Path in 3 seconds w/ goal bias 0.66
+Found Path in 5 seconds w/ goal bias 0.66
+
+Found Path in 39 seconds w/ goal bias 0.71
+Found Path in 128 seconds w/ goal bias 0.71
+Found Path in 50 seconds w/ goal bias 0.71
+Found Path in 35 seconds w/ goal bias 0.71
+Found Path in 10 seconds w/ goal bias 0.71
+
+Found Path in 47 seconds w/ goal bias 0.76
+Found Path in 73 seconds w/ goal bias 0.76
+Found Path in 9 seconds w/ goal bias 0.76
+Found Path in 7 seconds w/ goal bias 0.76
+Found Path in 19 seconds w/ goal bias 0.76
+
+Found Path in 3 seconds w/ goal bias 0.81
+Found Path in 13 seconds w/ goal bias 0.81
+Found Path in 11 seconds w/ goal bias 0.81
+Found Path in 15 seconds w/ goal bias 0.81
+Found Path in 44 seconds w/ goal bias 0.81
+Found Path in 139 seconds w/ goal bias 0.81
+Found Path in 117 seconds w/ goal bias 0.81
+Found Path in 37 seconds w/ goal bias 0.81
+
+Found Path in 2 seconds w/ goal bias 0.86
+Found Path in 4 seconds w/ goal bias 0.86
+Found Path in 39 seconds w/ goal bias 0.86
+Found Path in 132 seconds w/ goal bias 0.86
+Found Path in 76 seconds w/ goal bias 0.86
+
+Found Path in 30 seconds w/ goal bias 0.91
+Found Path in 31 seconds w/ goal bias 0.91
+Found Path in 27 seconds w/ goal bias 0.91
+Found Path in 38 seconds w/ goal bias 0.91
+Found Path in 45 seconds w/ goal bias 0.91
+Found Path in 111 seconds w/ goal bias 0.91
+Found Path in 106 seconds w/ goal bias 0.91

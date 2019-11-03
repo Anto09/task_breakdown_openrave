@@ -1,0 +1,284 @@
+... logging to /home/anto/.ros/log/9012bc90-3661-11e5-93f1-b8ca3aab9f21/roslaunch-irobotmqp-3045.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/anto/ebolabot_ws/src/task_breakdown_openrave/launch/task_breakdown_openrave.launch
+[1mstarted roslaunch server http://192.168.2.114:57694/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /move_group/allow_trajectory_execution
+ * /move_group/both_arms/longest_valid_segment_fraction
+ * /move_group/both_arms/planner_configs
+ * /move_group/both_arms/projection_evaluator
+ * /move_group/capabilities
+ * /move_group/controller_list
+ * /move_group/controller_manager_name
+ * /move_group/jiggle_fraction
+ * /move_group/left_arm/kinematics_solver
+ * /move_group/left_arm/kinematics_solver_attempts
+ * /move_group/left_arm/kinematics_solver_search_resolution
+ * /move_group/left_arm/kinematics_solver_timeout
+ * /move_group/left_arm/longest_valid_segment_fraction
+ * /move_group/left_arm/planner_configs
+ * /move_group/left_arm/projection_evaluator
+ * /move_group/left_hand/planner_configs
+ * /move_group/max_safe_path_cost
+ * /move_group/moveit_controller_manager
+ * /move_group/moveit_manage_controllers
+ * /move_group/planner_configs/BKPIECEkConfigDefault/type
+ * /move_group/planner_configs/ESTkConfigDefault/type
+ * /move_group/planner_configs/KPIECEkConfigDefault/type
+ * /move_group/planner_configs/LBKPIECEkConfigDefault/type
+ * /move_group/planner_configs/LazyRRTkConfigDefault/type
+ * /move_group/planner_configs/RRTConnectkConfigDefault/type
+ * /move_group/planner_configs/RRTStarkConfigDefault/type
+ * /move_group/planner_configs/RRTkConfigDefault/type
+ * /move_group/planner_configs/SBLkConfigDefault/type
+ * /move_group/planning_plugin
+ * /move_group/planning_scene_monitor/publish_geometry_updates
+ * /move_group/planning_scene_monitor/publish_planning_scene
+ * /move_group/planning_scene_monitor/publish_state_updates
+ * /move_group/planning_scene_monitor/publish_transforms_updates
+ * /move_group/request_adapters
+ * /move_group/right_arm/kinematics_solver
+ * /move_group/right_arm/kinematics_solver_attempts
+ * /move_group/right_arm/kinematics_solver_search_resolution
+ * /move_group/right_arm/kinematics_solver_timeout
+ * /move_group/right_arm/longest_valid_segment_fraction
+ * /move_group/right_arm/planner_configs
+ * /move_group/right_arm/projection_evaluator
+ * /move_group/right_hand/planner_configs
+ * /move_group/start_state_max_bounds_error
+ * /move_group/use_controller_manager
+ * /robot_description
+ * /robot_description_planning/joint_limits/left_e0/has_acceleration_limits
+ * /robot_description_planning/joint_limits/left_e0/has_velocity_limits
+ * /robot_description_planning/joint_limits/left_e0/max_acceleration
+ * /robot_description_planning/joint_limits/left_e0/max_velocity
+ * /robot_description_planning/joint_limits/left_e1/has_acceleration_limits
+ * /robot_description_planning/joint_limits/left_e1/has_velocity_limits
+ * /robot_description_planning/joint_limits/left_e1/max_acceleration
+ * /robot_description_planning/joint_limits/left_e1/max_velocity
+ * /robot_description_planning/joint_limits/left_s0/has_acceleration_limits
+ * /robot_description_planning/joint_limits/left_s0/has_velocity_limits
+ * /robot_description_planning/joint_limits/left_s0/max_acceleration
+ * /robot_description_planning/joint_limits/left_s0/max_velocity
+ * /robot_description_planning/joint_limits/left_s1/has_acceleration_limits
+ * /robot_description_planning/joint_limits/left_s1/has_velocity_limits
+ * /robot_description_planning/joint_limits/left_s1/max_acceleration
+ * /robot_description_planning/joint_limits/left_s1/max_velocity
+ * /robot_description_planning/joint_limits/left_w0/has_acceleration_limits
+ * /robot_description_planning/joint_limits/left_w0/has_velocity_limits
+ * /robot_description_planning/joint_limits/left_w0/max_acceleration
+ * /robot_description_planning/joint_limits/left_w0/max_velocity
+ * /robot_description_planning/joint_limits/left_w1/has_acceleration_limits
+ * /robot_description_planning/joint_limits/left_w1/has_velocity_limits
+ * /robot_description_planning/joint_limits/left_w1/max_acceleration
+ * /robot_description_planning/joint_limits/left_w1/max_velocity
+ * /robot_description_planning/joint_limits/left_w2/has_acceleration_limits
+ * /robot_description_planning/joint_limits/left_w2/has_velocity_limits
+ * /robot_description_planning/joint_limits/left_w2/max_acceleration
+ * /robot_description_planning/joint_limits/left_w2/max_velocity
+ * /robot_description_planning/joint_limits/right_e0/has_acceleration_limits
+ * /robot_description_planning/joint_limits/right_e0/has_velocity_limits
+ * /robot_description_planning/joint_limits/right_e0/max_acceleration
+ * /robot_description_planning/joint_limits/right_e0/max_velocity
+ * /robot_description_planning/joint_limits/right_e1/has_acceleration_limits
+ * /robot_description_planning/joint_limits/right_e1/has_velocity_limits
+ * /robot_description_planning/joint_limits/right_e1/max_acceleration
+ * /robot_description_planning/joint_limits/right_e1/max_velocity
+ * /robot_description_planning/joint_limits/right_s0/has_acceleration_limits
+ * /robot_description_planning/joint_limits/right_s0/has_velocity_limits
+ * /robot_description_planning/joint_limits/right_s0/max_acceleration
+ * /robot_description_planning/joint_limits/right_s0/max_velocity
+ * /robot_description_planning/joint_limits/right_s1/has_acceleration_limits
+ * /robot_description_planning/joint_limits/right_s1/has_velocity_limits
+ * /robot_description_planning/joint_limits/right_s1/max_acceleration
+ * /robot_description_planning/joint_limits/right_s1/max_velocity
+ * /robot_description_planning/joint_limits/right_w0/has_acceleration_limits
+ * /robot_description_planning/joint_limits/right_w0/has_velocity_limits
+ * /robot_description_planning/joint_limits/right_w0/max_acceleration
+ * /robot_description_planning/joint_limits/right_w0/max_velocity
+ * /robot_description_planning/joint_limits/right_w1/has_acceleration_limits
+ * /robot_description_planning/joint_limits/right_w1/has_velocity_limits
+ * /robot_description_planning/joint_limits/right_w1/max_acceleration
+ * /robot_description_planning/joint_limits/right_w1/max_velocity
+ * /robot_description_planning/joint_limits/right_w2/has_acceleration_limits
+ * /robot_description_planning/joint_limits/right_w2/has_velocity_limits
+ * /robot_description_planning/joint_limits/right_w2/max_acceleration
+ * /robot_description_planning/joint_limits/right_w2/max_velocity
+ * /robot_description_semantic
+ * /rosdistro
+ * /rosversion
+ * /rviz_irobotmqp_3045_3973842285404559483/left_arm/kinematics_solver
+ * /rviz_irobotmqp_3045_3973842285404559483/left_arm/kinematics_solver_attempts
+ * /rviz_irobotmqp_3045_3973842285404559483/left_arm/kinematics_solver_search_resolution
+ * /rviz_irobotmqp_3045_3973842285404559483/left_arm/kinematics_solver_timeout
+ * /rviz_irobotmqp_3045_3973842285404559483/right_arm/kinematics_solver
+ * /rviz_irobotmqp_3045_3973842285404559483/right_arm/kinematics_solver_attempts
+ * /rviz_irobotmqp_3045_3973842285404559483/right_arm/kinematics_solver_search_resolution
+ * /rviz_irobotmqp_3045_3973842285404559483/right_arm/kinematics_solver_timeout
+ * /task_breakdown/left_arm/kinematics_solver
+ * /task_breakdown/left_arm/kinematics_solver_attempts
+ * /task_breakdown/left_arm/kinematics_solver_search_resolution
+ * /task_breakdown/left_arm/kinematics_solver_timeout
+ * /task_breakdown/right_arm/kinematics_solver
+ * /task_breakdown/right_arm/kinematics_solver_attempts
+ * /task_breakdown/right_arm/kinematics_solver_search_resolution
+ * /task_breakdown/right_arm/kinematics_solver_timeout
+
+NODES
+  /
+    move_group (moveit_ros_move_group/move_group)
+    rviz_irobotmqp_3045_3973842285404559483 (rviz/rviz)
+    service_test (task_breakdown_openrave/service_test.py)
+    task_breakdown (baxter_moveit_test/task_breakdown)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/anto/ebolabot_ws/src/task_breakdown_openrave/launch/task_breakdown_openrave.launch http://localhost:11311
+core service [/rosout] found
+[1mprocess[task_breakdown-1]: started with pid [3071][0m
+[1mprocess[move_group-2]: star[0m[ INFO] [1438315128.372812982, 90757.857000000]: Loading robot model 'baxter'...[0m
+[0m[ INFO] [1438315128.372865430, 90757.857000000]: No root joint specified. Assuming fixed joint[0m
+FREE PARAMS: 1
+5 
+[0m[ INFO] [1438315128.660463909, 90758.135000000]: left_s0 -1.70168 1.70168 1[0m
+[0m[ INFO] [1438315128.660580825, 90758.135000000]: left_s1 -2.147 1.047 1[0m
+[0m[ INFO] [1438315128.660592721, 90758.135000000]: left_e0 -3.05418 3.05418 1[0m
+[0m[ INFO] [1438315128.660612729, 90758.135000000]: left_e1 -0.05 2.618 1[0m
+[0m[ INFO] [1438315128.660625025, 90758.135000000]: left_w0 -3.059 3.059 1[0m
+[0m[ INFO] [1438315128.660635696, 90758.135000000]: left_w1 -1.5708 2.094 1[0m
+[0m[ INFO] [1438315128.660647119, 90758.135000000]: left_w2 -3.059 3.059 1[0m
+FREE PARAMS: 1
+5 
+[0m[ INFO] [1438315128.669540099, 90758.144000000]: right_s0 -1.70168 1.70168 1[0m
+[0m[ INFO] [1438315128.669655198, 90758.144000000]: right_s1 -2.147 1.047 1[0m
+[0m[ INFO] [1438315128.669691849, 90758.144000000]: right_e0 -3.05418 3.05418 1[0m
+[0m[ INFO] [1438315128.669713179, 90758.144000000]: right_e1 -0.05 2.618 1[0m
+[0m[ INFO] [1438315128.669726081, 90758.144000000]: right_w0 -3.059 3.059 1[0m
+[0m[ INFO] [1438315128.669737122, 90758.144000000]: right_w1 -1.5708 2.094 1[0m
+[0m[ INFO] [1438315128.669748328, 90758.144000000]: right_w2 -3.059 3.059 1[0m
+[0m[ INFO] [1438315128.678953467, 90758.153000000]: Loading robot model 'baxter'...[0m
+[0m[ INFO] [1438315128.678978477, 90758.153000000]: No root joint specified. Assuming fixed joint[0m
+FREE PARAMS: 1
+5 
+[0m[ INFO] [1438315128.929435872, 90758.396000000]: left_s0 -1.70168 1.70168 1[0m
+[0m[ INFO] [1438315128.929467905, 90758.396000000]: left_s1 -2.147 1.047 1[0m
+[0m[ INFO] [1438315128.929486819, 90758.396000000]: left_e0 -3.05418 3.05418 1[0m
+[0m[ INFO] [1438315128.929503830, 90758.396000000]: left_e1 -0.05 2.618 1[0m
+[0m[ INFO] [1438315128.929521252, 90758.396000000]: left_w0 -3.059 3.059 1[0m
+[0m[ INFO] [1438315128.929538711, 90758.396000000]: left_w1 -1.5708 2.094 1[0m
+[0m[ INFO] [1438315128.929557182, 90758.396000000]: left_w2 -3.059 3.059 1[0m
+FREE PARAMS: 1
+5 
+[0m[ INFO] [1438315127.685799544]: Loading robot model 'baxter'...[0m
+[0m[ INFO] [1438315127.685858075]: No root joint specified. Assuming fixed joint[0m
+[0m[ INFO] [1438315127.926971618, 90757.458000000]: Loading robot model 'baxter'...[0m
+[0m[ INFO] [1438315127.927003807, 90757.458000000]: No root joint specified. Assuming fixed joint[0m
+[0m[ INFO] [1438315128.020985655, 90757.535000000]: Loading robot model 'baxter'...[0m
+[0m[ INFO] [1438315128.021017447, 90757.535000000]: No root joint specified. Assuming fixed joint[0m
+[0m[ INFO] [1438315128.151210743, 90757.661000000]: Publishing maintained planning scene on 'monitored_planning_scene'[0m
+[0m[ INFO] [1438315128.154130097, 90757.664000000]: MoveGroup debug mode is OFF[0m
+[96mStarting context monitors...
+[0m[0m[ INFO] [1438315128.154160526, 90757.664000000]: Starting scene monitor[0m
+[0m[ INFO] [1438315128.154744727, 90757.665000000]: Listening to '/planning_scene'[0m
+[0m[ INFO] [1438315128.154780774, 90757.665000000]: Starting world geometry monitor[0m
+[0m[ INFO] [1438315128.155487797, 90757.665000000]: Listening to '/collision_object' using message notifier with target frame '/base '[0m
+[0m[ INFO] [1438315128.156073881, 90757.666000000]: Listening to '/planning_scene_world' for planning scene world geometry[0m
+[33m[ WARN] [1438315128.156760350, 90757.667000000]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead[0m
+[0m[ INFO] [1438315128.291483448, 90757.785000000]: Listening to '/attached_collision_object' for attached collision objects[0m
+[96mContext monitors started.
+[0m[0m[ INFO] [1438315128.427086732, 90757.908000000]: Initializing OMPL interface using ROS parameters[0m
+[0m[ INFO] [1438315128.474484971, 90757.952000000]: Using planning interface 'OMPL'[0m
+[0m[ INFO] [1438315128.588631440, 90758.064000000]: Param 'default_workspace_bounds' was not set. Using default value: 10[0m
+[0m[ INFO] [1438315128.589131887, 90758.064000000]: Param 'start_state_max_bounds_error' was set to 0.1[0m
+[0m[ INFO] [1438315128.589756239, 90758.065000000]: Param 'start_state_max_dt' was not set. Using default value: 0.5[0m
+[0m[ INFO] [1438315128.590420946, 90758.066000000]: Param 'start_state_max_dt' was not set. Using default value: 0.5[0m
+[0m[ INFO] [1438315128.590832936, 90758.066000000]: Param 'jiggle_fraction' was set to 0.05[0m
+[0m[ INFO] [1438315128.591261310, 90758.066000000]: Param 'max_sampling_attempts' was not set. Using default value: 100[0m
+[0m[ INFO] [1438315128.591313659, 90758.067000000]: Using planning request adapter 'Add Time Parameterization'[0m
+[0m[ INFO] [1438315128.591333671, 90758.067000000]: Using planning request adapter 'Fix Workspace Bounds'[0m
+[0m[ INFO] [1438315128.591353700, 90758.067000000]: Using planning request adapter 'Fix Start State Bounds'[0m
+[0m[ INFO] [1438315128.591371590, 90758.067000000]: Using planning request adapter 'Fix Start State In Collision'[0m
+[0m[ INFO] [1438315128.591389618, 90758.067000000]: Using planning request adapter 'Fix Start State Path Constraints'[0m
+[0m[ INFO] [1438315128.912962905, 90758.379000000]: MoveitSimpleControllerManager: Added FollowJointTrajectory controller for /robot/limb/right[0m
+[0m[ INFO] [1438315129.129152405, 90758.593000000]: MoveitSimpleControllerManager: Added FollowJointTrajectory controller for /robot/limb/left[0m
+[0m[ INFO] [1438315129.129229295, 90758.593000000]: Returned 2 controllers in list[0m
+[0m[ INFO] [1438315129.137823220, 90758.601000000]: Trajectory execution is managing controllers[0m
+[96mLoading 'move_group/MoveGroupCartesianPathService'...
+[0m[96mLoading 'move_group/MoveGroupExecuteService'...
+[0m[96mLoading 'move_group/MoveGroupKinematicsService'...
+[0m[96mLoading 'move_group/MoveGroupMoveAction'...
+[0m[96mLoading 'move_group/MoveGroupPickPlaceAction'...
+[0m[96mLoading 'move_group/MoveGroupPlanService'...
+[0m[96mLoading 'move_group/MoveGroupQueryPlannersService'...
+[0m[96mLoading 'move_group/MoveGroupStateValidationService'...
+[0m[96mLoading 'move_group/MoveGroupGetPlanningSceneService'...
+[0m[0m[ INFO] [1438315129.389037013, 90758.832000000]: 
+
+********************************************************
+* MoveGroup using: 
+*     - CartesianPathService
+*     - ExecutePathService
+*     - KinematicsService
+*     - MoveAction
+*     - PickPlaceAction
+*     - MotionPlanService
+*     - QueryPlannersService
+*     - StateValidationService
+*     - GetPlanningSceneService
+********************************************************
+[0m
+[0m[ INFO] [1438315129.389117316, 90758.832000000]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner[0m
+[0m[ INFO] [1438315129.389151012, 90758.832000000]: MoveGroup context initialization complete[0m
+[92m
+All is well! Everyone is happy! You can start planning now!
+
+[0m[0m[ INFO] [1438315128.937833210, 90758.405000000]: right_s0 -1.70168 1.70168 1[0m
+[0m[ INFO] [1438315128.937867302, 90758.405000000]: right_s1 -2.147 1.047 1[0m
+[0m[ INFO] [1438315128.937892347, 90758.405000000]: right_e0 -3.05418 3.05418 1[0m
+[0m[ INFO] [1438315128.937910252, 90758.405000000]: right_e1 -0.05 2.618 1[0m
+[0m[ INFO] [1438315128.937934660, 90758.405000000]: right_w0 -3.059 3.059 1[0m
+[0m[ INFO] [1438315128.937945923, 90758.405000000]: right_w1 -1.5708 2.094 1[0m
+[0m[ INFO] [1438315128.937956706, 90758.405000000]: right_w2 -3.059 3.059 1[0m
+[0m[ INFO] [1438315130.007252650, 90759.446000000]: Ready to take MoveGroup commands for group left_arm.[0m
+[0m[ INFO] [1438315130.198423756, 90759.636000000]: Ready to take MoveGroup commands for group right_arm.[0m
+[0m[ INFO] [1438315130.238084382, 90759.676000000]: Loading robot model 'baxter'...[0m
+[0m[ INFO] [1438315130.238110498, 90759.676000000]: No root joint specified. Assuming fixed joint[0m
+FREE PARAMS: 1
+5 
+[0m[ INFO] [1438315130.490357890, 90759.921000000]: left_s0 -1.70168 1.70168 1[0m
+[0m[ INFO] [1438315130.490400319, 90759.921000000]: left_s1 -2.147 1.047 1[0m
+[0m[ INFO] [1438315130.490421718, 90759.921000000]: left_e0 -3.05418 3.05418 1[0m
+[0m[ INFO] [1438315130.490436232, 90759.921000000]: left_e1 -0.05 2.618 1[0m
+[0m[ INFO] [1438315130.490448636, 90759.921000000]: left_w0 -3.059 3.059 1[0m
+[0m[ INFO] [1438315130.490461641, 90759.921000000]: left_w1 -1.5708 2.094 1[0m
+[0m[ INFO] [1438315130.490472612, 90759.921000000]: left_w2 -3.059 3.059 1[0m
+FREE PARAMS: 1
+5 
+testing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+waiting for service
+done waiting for service
+Requesting 8
+[0m[ INFO] [1438315130.503182174, 90759.931000000]: right_s0 -1.70168 1.70168 1[0m
+[0m[ INFO] [1438315130.503262920, 90759.931000000]: right_s1 -2.147 1.047 1[0m
+[0m[ INFO] [1438315130.503317981, 90759.931000000]: right_e0 -3.05418 3.05418 1[0m
+[0m[ INFO] [1438315130.503360577, 90759.931000000]: right_e1 -0.05 2.618 1[0m
+[0m[ INFO] [1438315130.503401293, 90759.931000000]: right_w0 -3.059 3.059 1[0m
+[0m[ INFO] [1438315130.503489039, 90759.931000000]: right_w1 -1.5708 2.094 1[0m
+[0m[ INFO] [1438315130.503569914, 90759.931000000]: right_w2 -3.059 3.059 1[0m
+[0m[ INFO] [1438315130.504524154, 90759.931000000]: Loading robot model 'sdf_compute_bot'...[0m
+[0m[ INFO] [1438315130.504677682, 90759.932000000]: No root joint specified. Assuming fixed joint[0m
+[0m[ INFO] [1438315131.026417083, 90760.438000000]: SDF updated from MoveIt planning scene in 0.540000 seconds[0m
+ted with pid [3085][0m
+[1mprocess[rviz_irobotmqp_3045_3973842285404559483-3]: started with pid [3254][0m
+[1mprocess[service_test-4]: started with pid [3317][0m
+[rviz_irobotmqp_3045_3973842285404559483-3] killing on exit
+[move_group-2] killing on exit
+[task_breakdown-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

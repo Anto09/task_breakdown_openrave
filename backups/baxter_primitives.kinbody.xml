@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<kinbody name = "">
+  <body name="base">
+    <geom type="cylinder">
+      <translation>0.06 0 0</translation>
+      <rotationaxis>1 0 0 90</rotationaxis>
+      <radius>0.08</radius>
+      <height>1.5</height>
+      <diffuseColor>0.55 0.05 0.05</diffuseColor>
+    </geom>
+  </body>
+  <body name="torso">
+    <offsetfrom>base</offsetfrom>
+    <geom type="cylinder">
+      <!-- <translation>-0.02 0 0.25</translation>
+      <rotationaxis>1 0 0 90</rotationaxis> -->
+      <translation>0 0 0</translation>
+      <rotationaxis>1 0 0 0</rotationaxis>
+      <radius>0.19</radius>
+      <height>0.55</height>
+      <diffuseColor>0.05 0.05 0.05</diffuseColor>
+    </geom>
+  </body>
+<!--   <body name="torso_upper">
+    <offsetfrom>base</offsetfrom>
+    <geom type="cylinder">
+      <translation>-0.06 0 0.5</translation>
+      <rotationaxis>1 0 0 90</rotationaxis>
+      <radius>0.08</radius>
+      <height>0.25</height>
+      <diffuseColor>0.55 0.05 0.05</diffuseColor>
+    </geom>
+  </body>
+  <body name="torso_lower">
+    <offsetfrom>base</offsetfrom>
+    <geom type="cylinder">
+      <translation>0.06 0 -0.05</translation>
+      <rotationaxis>1 0 0 90</rotationaxis>
+      <radius>0.13</radius>
+      <height>0.35</height>
+      <diffuseColor>0.05 0.05 0.05</diffuseColor>
+    </geom>
+  </body> -->
+  <body name="left_arm_mount">
+    <geom type="cylinder">
+<!--       <translation>0.024645 0.219645 0.118588</translation>
+      <rotationaxis>0 0 1 45.00010522957485</rotationaxis>
+      <translation>0.024645 0.219645 0.118588</translation>
+      <rotationaxis>1 0 0 0.0</rotationaxis> -->
+      <radius>0.08</radius>
+      <height>0.4</height>
+      <diffuseColor>0.05 0.05 0.05</diffuseColor>
+    </geom>
+    <offsetfrom>torso</offsetfrom>
+    <translation>0.024645 0.219645 0.118588</translation>
+    <rotationaxis>0 0 1 45.00010522957485</rotationaxis>
+  </body>
+  <body name="left_upper_shoulder">
+    <geom type="cylinder">
+      <radius>0.08</radius>
+      <height>0.4</height>
+      <diffuseColor>0.55 0.0 0.0</diffuseColor>
+    </geom>
+    <offsetfrom>left_arm_mount</offsetfrom>
+    <translation>0.055695 0 0.011038</translation>
+    <rotationaxis>1 0 0 0</rotationaxis>
+  </body>
+  <body name="left_lower_shoulder">
+    <offsetfrom>left_arm_mount</offsetfrom>
+    <geom type="cylinder">
+      <translation>0.06900000000000001 0 0.27035</translation>
+      <rotationaxis>-1 0 0 89.99999999971946</rotationaxis>
+      <radius>0.08</radius>
+      <height>0.4</height>
+      <diffuseColor>0.0 0.0 0.55</diffuseColor>
+    </geom>
+  </body>
+  <body name="right_arm_mount">
+    <offsetfrom>torso</offsetfrom>
+    <geom type="cylinder">
+<!--       <translation>0.024645 -0.219645 0.118588</translation>
+      <rotationaxis>0 0 -1 45.00010522957485</rotationaxis>
+      <translation>0.024645 -0.219645 0.118588</translation>
+      <rotationaxis>1 0 0 0.0</rotationaxis> --> 
+      <translation>0.024645 -0.219645 0.118588</translation>
+      <rotationaxis>0 0 -1 45.00010522957485</rotationaxis>
+      <radius>0.08</radius>
+      <height>0.4</height>
+      <diffuseColor>0.05 0.05 0.05</diffuseColor>
+    </geom>
+  </body>
+  <body name="right_lower_shoulder">
+    <offsetfrom>right_arm_mount</offsetfrom>
+    <geom type="cylinder">
+      <translation>0.1574782866771854 -0.3599599780869331 0.3972859999999741</translation>
+      <rotationaxis>-0.9235663851388681 0.372143361268264 0.09238209190899688 173.4234426505545</rotationaxis>  
+      <radius>0.08</radius>
+      <height>0.4</height>
+      <diffuseColor>0.55 0.0 0.0</diffuseColor>
+    </geom>
+  </body>
+</kinbody>

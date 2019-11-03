@@ -1,0 +1,16 @@
+[0;33;48m[plugindatabase.h:573] [0;38;48m[0;33;48mFailed to create name base_stereo_camera, interface sensor
+[0;38;48m[0;33;48m[colladareader.cpp:2584] [0;38;48m[0;33;48mcannot find instance_sensor for attached sensor pr2:wide_stereo_optical_sensor
+[m[0;33;48m[plugindatabase.h:573] [0;38;48m[0;33;48mFailed to create name base_stereo_camera, interface sensor
+[0;38;48m[0;33;48m[colladareader.cpp:2584] [0;38;48m[0;33;48mcannot find instance_sensor for attached sensor pr2:narrow_stereo_optical_sensor
+[m[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/interface_type[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/interface_type[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/angle_range[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/distance_range[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/angle_increment[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/measurement_time[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/interface_type[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/angle_range[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/distance_range[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/angle_increment[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/measurement_time[m
+[0;33;48m[colladareader.cpp:2725] [0;38;48m[0;33;48munprocessed tag: sensor/interface_type[m

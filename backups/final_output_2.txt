@@ -1,0 +1,2 @@
+original path length 5.71721
+smoothed path length 2.68087

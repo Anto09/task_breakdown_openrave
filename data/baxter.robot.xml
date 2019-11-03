@@ -1,0 +1,80 @@
+<Robot name="Baxter" file="baxter.dae">
+  <!-- include the barrett hand -->
+  <KinBody>
+    <body name="torso">
+      <offsetfrom>base</offsetfrom>
+      <geom type="cylinder">
+        <translation>0.06 0 0</translation>
+        <rotationaxis>1 0 0 90</rotationaxis>
+        <radius>0.08</radius>
+        <height>1.5</height>
+        <diffuseColor>0.55 0.05 0.05</diffuseColor>
+      </geom>
+    </body>
+  </KinBody>
+  <!-- large torso section -->
+  <KinBody>
+    <body name="torso">
+      <offsetfrom>base</offsetfrom>
+      <geom type="cylinder">
+        <translation>-0.02 0 0.25</translation>
+        <rotationaxis>1 0 0 90</rotationaxis>
+        <radius>0.19</radius>
+        <height>0.55</height>
+        <diffuseColor>0.05 0.05 0.05</diffuseColor>
+      </geom>
+    </body>
+  </KinBody>
+  <!-- upper torso section -->
+  <KinBody>
+    <body name="torso">
+      <offsetfrom>base</offsetfrom>
+      <geom type="cylinder">
+        <translation>-0.06 0 0.5</translation>
+        <rotationaxis>1 0 0 90</rotationaxis>
+        <radius>0.08</radius>
+        <height>0.25</height>
+        <diffuseColor>0.55 0.05 0.05</diffuseColor>
+      </geom>
+    </body>
+  </KinBody>
+  <!-- lower torso section -->
+  <KinBody>
+    <body name="torso">
+      <offsetfrom>base</offsetfrom>
+      <geom type="cylinder">
+        <translation>0.06 0 -0.05</translation>
+        <rotationaxis>1 0 0 90</rotationaxis>
+        <radius>0.13</radius>
+        <height>0.35</height>
+        <diffuseColor>0.05 0.05 0.05</diffuseColor>
+      </geom>
+    </body>
+  </KinBody>
+  <!-- left arm mount -->
+  <KinBody>
+    <body name="torso">
+      <offsetfrom>base</offsetfrom>
+      <geom type="cylinder">
+        <translation>0.024645 0.219645 0.118588</translation>
+        <rotationaxis>1 0 0 90</rotationaxis>
+        <radius>0.08</radius>
+        <height>0.4</height>
+        <diffuseColor>0.05 0.05 0.05</diffuseColor>
+      </geom>
+    </body>
+  </KinBody>
+  <!-- right arm mount -->
+  <KinBody>
+    <body name="torso">
+      <offsetfrom>base</offsetfrom>
+      <geom type="cylinder">
+        <translation>0.024645 -0.219645 0.118588</translation>
+        <rotationaxis>1 0 0 90</rotationaxis>
+        <radius>0.08</radius>
+        <height>0.4</height>
+        <diffuseColor>0.05 0.05 0.05</diffuseColor>
+      </geom>
+    </body>
+  </KinBody>
+</Robot>

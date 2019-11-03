@@ -1,0 +1,268 @@
+<?xml version="1.0" ?>
+<kinbody name = "Baxter_right_arm">
+  <body name="base">
+    <geometry type="cylinder">
+      <radius>0</radius>
+      <height>0</height>
+    </geometry>
+  </body>
+  <body name="right_arm_mount">
+    <geometry type="cylinder">
+      <radius>0.000</radius>
+      <height>0.000</height>
+      <translation>0 0 0</translation>
+      <diffusecolor>0.55 0.05 0.05</diffusecolor>
+      <transparency>0</transparency>
+    </geometry>
+    <offsetfrom>base</offsetfrom>
+    <translation>0.024645 -0.219645 0.118588</translation>
+    <rotationaxis>0 0 -1 45.00010522957485</rotationaxis>
+<!--     <translation>-0.0 -0.0 -0.0</translation>
+    <rotationaxis>1.0 0.0 0.0 0.0</rotationaxis> -->
+<!--     <translation>0.02306 -0.22039 0.10744</translation>
+    <rotationaxis>0.0305 -0.00974 -0.99949 45.10842</rotationaxis> -->
+  </body>
+
+  <joint name="right_torso_arm_mount" type="hinge" enable="false">
+      <body>base</body>
+      <body>right_arm_mount</body>
+      <offsetfrom>base</offsetfrom>
+      <anchor>0.024645 -0.219645 0.118588</anchor>
+      <rotationaxis>0 0 -1 45.00010522957485</rotationaxis>
+      <!-- <anchor>0.02306 -0.22039 0.10744</anchor> -->
+      <!-- <rotationaxis>0.0305 -0.00974 -0.99949 45.10842</rotationaxis> -->
+      <!-- <anchor>0.0230600028897 -0.220386190561 0.107439506778</anchor> -->
+      <axis>0 0 1</axis>
+      <limitsdeg>0 0</limitsdeg>
+      <maxvel>0</maxvel>
+      <maxtorque>0</maxtorque>
+  </joint>
+
+   <body name="right_upper_shoulder">
+    <geometry type="trimesh">
+      <data>../meshes/upper_shoulder/S0.stl 1</data>
+      <translation>0 0 0</translation>
+      <!-- <rotationaxis>1 0 0 0</rotationaxis> -->
+      <diffusecolor>.5 .1 .1</diffusecolor>
+      <transparency>0</transparency>
+    </geometry>
+    <offsetfrom>right_arm_mount</offsetfrom>
+<!--     <translation>0.055695 0 0.011038</translation>
+    <rotationaxis>1 0 0 0</rotationaxis>
+    <translation>-0.0 -0.0 -0.0</translation>
+    <rotationaxis>1.0 0.0 0.0 0.0</rotationaxis> -->
+    <translation>0.0557 0.0 0.01104</translation>
+    <rotationaxis>1.0 0.0 0.0 0.0</rotationaxis>
+<!--     <rotationaxis>0.0 0.0 1.0 0.0</rotationaxis>
+    <translation>0.0 0.0 0.1361</translation>
+    <rotationaxis>1.0 0.0 0.0 0.0</rotationaxis> -->
+  </body>
+
+  <joint name="right_s0" type="hinge">
+      <body>right_arm_mount</body>
+      <body>right_upper_shoulder</body>
+      <offsetfrom>right_arm_mount</offsetfrom>
+      <anchor>0.0557 0.0 0.01104</anchor>
+      <rotationaxis>1.0 0.0 0.0 0.0</rotationaxis>
+      <axis>0 0 1</axis>
+      <limitsdeg>-97.49907857417431 97.49907857417431</limitsdeg>
+      <maxvel>85.94366927</maxvel>
+      <maxtorque>50</maxtorque>
+  </joint>
+
+  <body name="right_lower_shoulder">
+    <geometry type="trimesh">
+      <data>../meshes/lower_shoulder/S1.stl 1</data>
+      <translation>0 0 0</translation>
+      <!-- <rotationaxis>1 0 0 0</rotationaxis> -->
+      <diffusecolor>.5 .1 .1</diffusecolor>
+      <transparency>0</transparency>
+    </geometry>
+    <offsetfrom>right_upper_shoulder</offsetfrom>
+    <!-- <translation>0.06900000000000001 0 0.27035</translation>
+    <rotationaxis>-1 0 0 89.99999999971946</rotationaxis> -->
+    <translation>0.069 0.0 0.27035</translation>
+    <rotationaxis>-1.0 0.0 0.0 90.0</rotationaxis>
+  </body>
+
+  <joint name="right_s1" type="hinge">
+      <body>right_upper_shoulder</body>
+      <body>right_lower_shoulder</body>
+      <offsetfrom>right_upper_shoulder</offsetfrom>
+      <!-- <anchor>0.06900000000000001 0 0.27035</anchor> -->
+      <anchor>0.069 0.0 0.27035</anchor>
+      <rotationaxis>-1.0 0.0 0.0 90.0</rotationaxis>
+      <axis>0 1 0</axis>
+      <limitsdeg>-123.0140386145877 59.98868115019719</limitsdeg>
+      <maxvel>85.94366927</maxvel>
+      <maxtorque>50</maxtorque>
+  </joint>
+
+  <body name="right_upper_elbow">
+    <geometry type="trimesh">
+      <data>../meshes/upper_elbow/E0.stl 1</data>
+      <translation>0 0 0</translation>
+      <!-- <rotationaxis>1 0 0 0</rotationaxis> -->
+      <diffusecolor>.5 .1 .1</diffusecolor>
+      <transparency>0</transparency>
+    </geometry>
+    <offsetfrom>right_lower_shoulder</offsetfrom>
+<!--     <translation>0.102 0 0</translation>
+    <rotationaxis>0.5773502691905681 0.577350269187741 0.5773502691905681 119.9999999996761</rotationaxis> -->
+    <translation>0.102 0.0 0.0</translation>
+    <rotationaxis>0.57735 0.57735 0.57735 120.0</rotationaxis>
+  </body>
+
+  <joint name="right_e0" type="hinge">
+      <body>right_lower_shoulder</body>
+      <body>right_upper_elbow</body>
+      <offsetfrom>right_lower_shoulder</offsetfrom>
+      <anchor>0.102 0 0</anchor>
+      <rotationaxis>0.57735 0.57735 0.57735 120.0</rotationaxis>
+      <!-- <axis>0 0 1</axis> -->
+      <axis>1 0 0</axis>
+      <limitsdeg>-174.9916203656181 174.9916203656181</limitsdeg>
+      <maxvel>85.94366927</maxvel>
+      <maxtorque>50</maxtorque>
+  </joint>
+
+  <body name="right_lower_elbow">
+    <geometry type="trimesh">
+      <data>../meshes/lower_elbow/E1.stl 1</data>
+      <translation>0 0 0</translation>
+<!--       <rotationaxis>1 0 0 0</rotationaxis> -->
+      <diffusecolor>.5 .1 .1</diffusecolor>
+      <transparency>0</transparency>
+    </geometry>
+    <offsetfrom>right_upper_elbow</offsetfrom>
+<!--     <translation>0.06900000000000001 0 0.26242</translation>
+    <rotationaxis>-0.5773502691905681 -0.5773502691905681 -0.577350269187741 119.9999999996761</rotationaxis> -->
+    <translation>0.069 0.0 0.26242</translation>
+    <rotationaxis>-0.57735 -0.57735 -0.57735 120.0</rotationaxis>
+  </body>
+
+  <joint name="right_e1" type="hinge">
+      <body>right_upper_elbow</body>
+      <body>right_lower_elbow</body>
+      <offsetfrom>right_upper_elbow</offsetfrom>
+      <!-- <anchor>0.06900000000000001 0 0.26242</anchor> -->
+      <anchor>0.069 0 0.26242</anchor>
+      <rotationaxis>-0.57735 -0.57735 -0.57735 120.0</rotationaxis>
+      <!-- <axis>0 0 1</axis> -->
+      <axis>0 1 0</axis>
+      <limitsdeg>-2.864788975654116 150.0003507652495</limitsdeg>
+      <maxvel>85.94366927</maxvel>
+      <maxtorque>50</maxtorque>
+  </joint>
+
+  <body name="right_upper_forearm">
+    <geometry type="trimesh">
+      <data>../meshes/upper_forearm/W0.stl 1</data>
+      <translation>0 0 0</translation>
+      <!-- <rotationaxis>1 0 0 0</rotationaxis> -->
+      <diffusecolor>.5 .1 .1</diffusecolor>
+      <transparency>0</transparency>
+    </geometry>
+    <offsetfrom>right_lower_elbow</offsetfrom>
+<!--     <translation>0.10359 0 0</translation>
+    <rotationaxis>0.5773502691905681 0.577350269187741 0.5773502691905681 119.9999999996761</rotationaxis> -->
+    <translation>0.10359 0.0 0.0</translation>
+    <rotationaxis>0.57735 0.57735 0.57735 120.0</rotationaxis>
+  </body>
+
+  <joint name="right_w0" type="hinge">
+      <body>right_lower_elbow</body>
+      <body>right_upper_forearm</body>
+      <offsetfrom>right_lower_elbow</offsetfrom>
+      <anchor>0.10359 0 0</anchor>
+      <rotationaxis>0.57735 0.57735 0.57735 120.0</rotationaxis>
+      <!-- <axis>0 0 1</axis> -->
+      <axis>1 0 0</axis>
+      <limitsdeg>-175.2677895305188 175.2677895305188</limitsdeg>
+      <maxvel>229.18311805</maxvel>
+      <maxtorque>15</maxtorque>
+  </joint>
+
+  <body name="right_lower_forearm">
+    <geometry type="trimesh">
+      <data>../meshes/lower_forearm/W1.stl 1</data>
+      <translation>0 0 0</translation>
+      <!-- <rotationaxis>1 0 0 0</rotationaxis> -->
+      <diffusecolor>.5 .1 .1</diffusecolor>
+      <transparency>0</transparency>
+    </geometry>
+    <offsetfrom>right_upper_forearm</offsetfrom>
+    <!-- <translation>0.01 0 0.2707</translation>
+    <rotationaxis>-0.5773502691905681 -0.5773502691905681 -0.577350269187741 119.9999999996761</rotationaxis> -->
+    <translation>0.01 0.0 0.2707</translation>
+    <rotationaxis>-0.57735 -0.57735 -0.57735 120.0</rotationaxis>
+  </body>
+
+  <joint name="right_w1" type="hinge">
+      <body>right_upper_forearm</body>
+      <body>right_lower_forearm</body>
+      <offsetfrom>right_upper_forearm</offsetfrom>
+      <anchor>0.01 0 0.2707</anchor>
+      <rotationaxis>-0.57735 -0.57735 -0.57735 120.0</rotationaxis>
+      <!-- <axis>0 0 1</axis> -->
+      <axis>0 1 0</axis>
+      <limitsdeg>-89.99999999971945 119.9773623003944</limitsdeg>
+      <maxvel>229.18311805</maxvel>
+      <maxtorque>15</maxtorque>
+  </joint>
+  
+  <body name="right_wrist">
+    <geometry type="trimesh">
+      <data>../meshes/wrist/W2.stl 1</data>
+      <translation>0 0 0</translation>
+      <!-- <rotationaxis>1 0 0 0</rotationaxis> -->
+      <diffusecolor>.1 .1 .1</diffusecolor>
+      <transparency>0</transparency>
+    </geometry>
+    <offsetfrom>right_lower_forearm</offsetfrom>
+<!--     <translation>0.115975 0 0</translation>
+    <rotationaxis>0.5773502691905681 0.577350269187741 0.5773502691905681 119.9999999996761</rotationaxis> -->
+    <translation>0.11597 0.0 0.0</translation>
+    <rotationaxis>0.57735 0.57735 0.57735 120.0</rotationaxis>
+  </body>
+
+  <joint name="right_w2" type="hinge">
+      <body>right_lower_forearm</body>
+      <body>right_wrist</body>
+      <offsetfrom>right_lower_forearm</offsetfrom>
+      <anchor>0.115975 0 0</anchor>
+      <rotationaxis>0.57735 0.57735 0.57735 120.0</rotationaxis>
+     <!--  <axis>0 0 1</axis> -->
+      <axis>1 0 0</axis>
+      <limitsdeg>-175.2677895305188 175.2677895305188</limitsdeg>
+      <maxvel>229.18311805</maxvel>
+      <maxtorque>15</maxtorque>
+  </joint>
+
+  <body name="right_hand">
+    <geometry type="cylinder">
+      <radius>0.000</radius>
+      <height>0.000</height>
+      <translation>0 0 0</translation>
+      <diffusecolor>0.55 0.05 0.05</diffusecolor>
+      <transparency>0</transparency>
+    </geometry>
+    <offsetfrom>right_wrist</offsetfrom>
+    <translation>0.0 0.0 0.11355</translation>
+    <rotationaxis>1.0 0.0 0.0 0.0</rotationaxis>
+  </body>
+
+  <joint name="right_hand_fixed" type="hinge" enable="false">
+      <body>right_wrist</body>
+      <body>right_hand</body>
+      <offsetfrom>right_wrist</offsetfrom>
+      <anchor>0.0 0.0 0.11355</anchor>
+      <rotationaxis>1.0 0.0 0.0 0.0</rotationaxis>
+     <!--  <axis>0 0 1</axis> -->
+      <axis>1 0 0</axis>
+      <limitsdeg>0 0</limitsdeg>
+      <maxvel>0</maxvel>
+      <maxtorque>0</maxtorque>
+  </joint>
+
+</kinbody>
