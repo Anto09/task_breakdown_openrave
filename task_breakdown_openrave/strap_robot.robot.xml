@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<Robot name="Strap"><!--  file="baxter.dae"> -->
+  <KinBody file = "strap_robot.kinbody.xml" makejoinedlinksadjacent="true">
+        <translation>0 0 0</translation>
+  </KinBody>
+</Robot>

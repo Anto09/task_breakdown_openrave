@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<kinbody name = "Goggles_bot">
+
+ <body name="lenses">
+    <Geom type="box">
+      <extents>0.035 0.12 0.045</extents>
+      <diffuseColor>1 .2 .2</diffuseColor>
+    </Geom>
+ </body>
+ 
+ <body name="backstrap">
+    <Geom type="box">
+      <extents> 0.005 0.12 0.015</extents>
+      <diffuseColor> 0 0 0</diffuseColor>
+    </Geom>
+    <offsetfrom>lenses</offsetfrom>
+    <translation> 0.05 0 0 </translation>
+ </body>
+ 
+ <joint name="j1" type="slider">
+   <Body>lenses</Body>
+   <Body>backstrap</Body>
+   <Anchor>0 0 0</Anchor>
+   <Axis>1 0 0</Axis>
+   <Weight>1.0</Weight>
+   <maxtorque>10</maxtorque>
+ </joint>
+
+  <body name="leftstrap1">
+    <Geom type="box">
+      <extents> 0.135 0.005 0.015</extents>
+      <diffuseColor> 0 0 0</diffuseColor>
+    </Geom>
+    <offsetfrom>lenses</offsetfrom>
+    <translation> 0.135 0.12 0 </translation>
+  </body>
+  <body name="rightstrap1">
+    <Geom type="box">
+      <extents> 0.135 0.005 0.015</extents>
+      <diffuseColor> 0 0 0</diffuseColor>
+    </Geom>
+    <offsetfrom>lenses</offsetfrom>
+    <translation> 0.135 -0.12 0 </translation>
+  </body>
+
+ <joint name="j2" type="slider">
+   <Body>lenses</Body>
+   <Body>leftstrap1</Body>
+   <Anchor>0 0 0</Anchor>
+   <Axis>1 0 0</Axis>
+   <Weight>1.0</Weight>
+   <maxtorque>10</maxtorque>
+ </joint>
+ <joint name="j3" type="slider">
+   <Body>lenses</Body>
+   <Body>rightstrap1</Body>
+   <Anchor>0 0 0</Anchor>
+   <Axis>1 0 0</Axis>
+   <Weight>1.0</Weight>
+   <maxtorque>10</maxtorque>
+ </joint>
+
+  <body name="leftstrap2">
+    <Geom type="box">
+      <extents> 0.135 0.005 0.015</extents>
+      <diffuseColor> 0 0 0</diffuseColor>
+    </Geom>
+    <offsetfrom>backstrap</offsetfrom>
+    <translation> -0.135 0.12 0 </translation>
+  </body>
+ <joint name="j4" type="slider">
+   <Body>backstrap</Body>
+   <Body>leftstrap2</Body>
+   <Anchor>0 0 0</Anchor>
+   <Axis>1 0 0</Axis>
+   <Weight>1.0</Weight>
+   <maxtorque>10</maxtorque>
+ </joint>
+
+ <body name="rightstrap2">
+  <Geom type="box">
+    <extents> 0.135 0.005 0.015</extents>
+    <diffuseColor> 0 0 0</diffuseColor>
+  </Geom>
+  <offsetfrom>backstrap</offsetfrom>
+  <translation> -0.135 -0.12 0 </translation>
+</body>
+ <joint name="j5" type="slider">
+   <Body>backstrap</Body>
+   <Body>rightstrap2</Body>
+   <Anchor>0 0 0</Anchor>
+   <Axis>1 0 0</Axis>
+   <Weight>1.0</Weight>
+   <maxtorque>10</maxtorque>
+ </joint>
+
+</kinbody>
+

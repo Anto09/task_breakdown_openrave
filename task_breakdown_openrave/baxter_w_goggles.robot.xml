@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<Robot name="Baxter">
+  <KinBody file = "baxter_w_goggles.kinbody.xml" makejoinedlinksadjacent="true">
+        <translation>0 0 0</translation>
+  </KinBody>
+  <Manipulator name="leftarm">
+        <base>left_arm_mount</base>
+        <effector>left_hand</effector>
+<!--         <direction>0 0 1</direction>  -->
+        <iksolver>baxter_leftarm_ikfast</iksolver>
+    </Manipulator>  
+
+    <Manipulator name="rightarm">
+        <base>right_arm_mount</base>
+        <effector>right_hand</effector>
+<!--         <direction>0 0 1</direction>  -->
+        <iksolver>baxter_rightarm_ikfast</iksolver>
+    </Manipulator>
+</Robot>

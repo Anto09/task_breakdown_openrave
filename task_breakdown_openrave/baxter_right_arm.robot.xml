@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<Robot name="Baxter_right_arm"><!--  file="baxter.dae"> -->
+  <KinBody file = "baxter_right_arm.kinbody.xml" makejoinedlinksadjacent="true">
+        <translation>0 0 0</translation>
+  </KinBody>
+
+    <Manipulator name="rightarm">
+        <base>right_arm_mount</base>
+        <effector>right_hand</effector>
+    </Manipulator>
+</Robot>

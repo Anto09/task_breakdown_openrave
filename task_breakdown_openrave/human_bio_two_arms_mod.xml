@@ -1,0 +1,841 @@
+<!-- Exported at: 10/6/2012 6:01:17 PM -->
+<robot name="human_model" >
+<kinbody name="human_kinbody">
+
+    <modelsdir>models</modelsdir>
+    
+    <body name="Base">
+        <!--Body_Torso Parent Center of Mass to Base -->
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+
+    <body name="PlevisDummyTransX">
+        <offsetfrom>Base</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body> 
+    <body name="PlevisDummyTransY">
+        <offsetfrom>PlevisDummyTransX</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+    <body name="PlevisDummyTransZ">
+        <offsetfrom>PlevisDummyTransY</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>S
+        </geom>
+    </body>
+    <body name="PlevisDummyRotX">
+        <offsetfrom>PlevisDummyTransZ</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+    <body name="PlevisDummyRotY">
+        <offsetfrom>PlevisDummyRotX</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+<!--    <body name="PlevisDummyRotZ">-->
+<!--        <offsetfrom>PlevisDummyRotY</offsetfrom>-->
+<!--        <translation>0.0 0.0 0.0</translation>-->
+<!--        <geom type="sphere">-->
+<!--            <radius>0.02</radius>-->
+<!--            <transparency>1</transparency>-->
+<!--        </geom>-->
+<!--    </body>-->
+     
+    <body name="PelvisBody">
+        <!--Body_Torso Parent Center of Mass to Base -->
+        <offsetfrom>PlevisDummyRotY</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="cylinder">
+            <translation>0 0 -0.05</translation>
+            <rotationaxis>1 0 0 90</rotationaxis>
+            <radius>0.1595</radius>
+            <height>0.30</height>
+            <diffuseColor>0.3 0.3 0.3</diffuseColor>
+        </geom>
+    </body>
+
+    <!-- ******************* Torso ********************************** -->
+    <!-- *********************************************************** -->
+
+    <body name="TorsoDummyX">
+        <offsetfrom>PelvisBody</offsetfrom>
+        <translation>0.037432 0 0.139749</translation>
+        <rotationaxis>1 0 0 90</rotationaxis>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+     <body name="TorsoDummyY">
+        <offsetfrom>TorsoDummyX</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+    <body name="TorsoDummyZ">
+        <offsetfrom>TorsoDummyY</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+
+    <body name="TorsoDummyTransX">
+        <offsetfrom>TorsoDummyZ</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+    <body name="TorsoDummyTransY">
+        <offsetfrom>TorsoDummyTransX</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+    <body name="TorsoDummyTransZ">
+        <offsetfrom>TorsoDummyTransY</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+
+    <body name="Torso">
+        <offsetfrom>TorsoDummyZ</offsetfrom>
+        <translation>0 -0.08 0</translation>
+        <rotationaxis>1 0 0 -90</rotationaxis>
+
+        <geom type="cylinder">
+            <!-- <translation>0 -.01 .10</translation> -->
+            <translation>-0.026786 -.01 .10</translation>
+            <rotationaxis>1 0 0 90</rotationaxis>
+            <radius>0.183</radius>
+            <height>0.257</height>
+            <diffuseColor>0.800 0.000 0.0100</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+         <geom type="box">
+            <translation>-0.026786 -0.004374 0.307613</translation>
+            <rotationaxis>0 0 1 90</rotationaxis>
+            <extents>0.20 0.10 0.075</extents>
+            <diffuseColor>0.800 0.000 0.0100</diffuseColor>
+             <transparency>0.8</transparency>
+        </geom>
+        <geom type="cylinder">
+            <!-- <translation>-0.02359 -0.004374 0.400478</translation> -->
+            <translation>-0.026786 -0.004374 0.400478</translation>
+            <rotationaxis>1 0 0 90</rotationaxis>
+            <radius>0.073</radius>
+            <height>0.126</height>
+            <diffuseColor>0.901961 0.772549 0.694118</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>
+
+    <!-- ******************* Head ********************************** -->
+    <!-- *********************************************************** -->
+    
+    <body name="HeadDummyZ">
+        <offsetfrom>Torso</offsetfrom>
+        <translation>-0.026786 0 0.454217</translation>
+        <!-- <translation>0 0 0.454217</translation> -->
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+    <body name="HeadDummyY">
+        <offsetfrom>HeadDummyZ</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+    <body name="Head">
+        <offsetfrom>HeadDummyY</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <translation>0.034094 0.004925 0.088688</translation>
+            <radius>0.11</radius>
+            <diffuseColor>0.901961 0.772549 0.694118</diffuseColor>
+            <transparency>0.5</transparency>
+        </geom>
+    </body>
+    
+    <!-- ******************* RIGHT ARM ***************************** -->
+    <!-- *********************************************************** -->
+    
+    <body name="rShoulderDummyX"> 
+        <offsetfrom>Torso</offsetfrom>
+        <rotationaxis>1 0 0 -90</rotationaxis>
+        <translation>-0.048632 -0.23982 0.288822</translation>
+        <rotationaxis>0 0 1 180</rotationaxis>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+    <body name="rShoulderDummyZ">
+        <offsetfrom>rShoulderDummyX</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+
+    <body name="rHumerus">
+        <offsetfrom>rShoulderDummyZ</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="cylinder">
+            <translation>0 .08 0</translation>
+            <radius>0.053</radius>
+            <height>0.2475</height>
+            <diffuseColor>0.800 0.000 0.0100</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>
+   
+    <body name="rElbowDummy">
+        <offsetfrom>rHumerus</offsetfrom>
+        <translation>0.004167 0.206608 0.001653</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+
+    <body name="rRadius">
+        <offsetfrom>rElbowDummy</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="cylinder">
+            <translation>0.010577 0.129127 0.001946</translation>
+            <radius>0.053</radius>
+            <height>0.281</height>
+            <diffuseColor>0.901961 0.772549 0.694118</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>
+
+    <body name="rWristDummyX">
+        <offsetfrom>rRadius</offsetfrom>
+        <translation>0.002774 0.250572 0.004556</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>
+    <body name="rWristDummyY">
+        <offsetfrom>rWristDummyX</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>
+    
+    <body name="rHand">
+        <offsetfrom>rWristDummyY</offsetfrom>
+        <geom type="box">
+            <translation>-0.006131 0.056806 0.01241</translation>
+            <rotationaxis>0 0 1 90</rotationaxis>
+            <extents>0.068800 0.048000 0.027500</extents>
+            <diffuseColor>0.901961 0.772549 0.694118</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+        <geom type="box">    
+            <translation>-0.006131 0.160954 0.037292</translation>
+            <rotationaxis>0 0 1 90</rotationaxis>
+            <extents>0.045150 0.049350 0.015200</extents>
+            <diffuseColor>0.901961 0.772549 0.694118</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+        <geom type="box">    
+            <translation>-0.06748 0.08632 0.002815</translation>
+            <rotationaxis>0 0 1 90</rotationaxis>
+            <extents>0.044700 0.012400 0.015600</extents>
+            <diffuseColor>0.901961 0.772549 0.694118</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>
+    
+    <!-- ******************* LEFT ARM ***************************** -->
+    <!-- *********************************************************** -->
+    
+    <body name="lShoulderDummyX">
+        <offsetfrom>Torso</offsetfrom>
+        <rotationaxis>1 0 0 -90</rotationaxis>
+        <translation>-0.048632  0.23982 0.288822</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>    
+    <body name="lShoulderDummyZ">
+        <offsetfrom>lShoulderDummyX</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+
+    <body name="lHumerus">
+        <offsetfrom>lShoulderDummyZ</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="cylinder">
+            <translation>0 .08 0</translation> <!-- Why ??? ... -->            
+<!--            <translation>0.0112 -0.428571 0.23982</translation>-->
+            <radius>0.053</radius>
+            <height>0.2475</height>
+            <diffuseColor>0.800 0.000 0.0100</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>
+
+    <body name="lElbowDummy">
+        <offsetfrom>lHumerus</offsetfrom>
+        <translation>0.004167 0.206608 0.001653</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+    
+    <body name="lRadius">
+        <offsetfrom>lElbowDummy</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="cylinder">
+            <translation>0.010577 0.129127 0.001946</translation>
+            <!--<rotationaxis>1 0 0 90</rotationaxis> -->
+            <radius>0.053</radius>
+            <height>0.281</height>
+            <diffuseColor>0.901961 0.772549 0.694118</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>
+
+    <body name="lWristDummyX">
+        <offsetfrom>lRadius</offsetfrom>
+        <translation>0.002774 0.250572 0.004556</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>    
+    <body name="lWristDummyY">
+        <offsetfrom>lWristDummyX</offsetfrom>
+        <translation>0.0 0.0 0.0</translation>
+        <geom type="sphere">
+            <radius>0.02</radius>
+            <transparency>1</transparency>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>
+    
+    <body name="lHand">
+        <offsetfrom>lWristDummyY</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="box">    
+            <translation>0.006131 0.056806 0.01241</translation>
+            <rotationaxis>0 0 1 90</rotationaxis>
+            <extents>0.068800 0.048000 0.027500</extents>
+            <diffuseColor>0.901961 0.772549 0.694118</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+        <geom type="box">    
+            <translation>0.006131 0.160954 0.037292</translation>
+            <rotationaxis>0 0 1 90</rotationaxis>
+            <extents>0.045150 0.049350 0.015200</extents>
+            <diffuseColor>0.901961 0.772549 0.694118</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+        <geom type="box">    
+            <translation>0.06748 0.08632 0.002815</translation>
+            <rotationaxis>0 0 1 90</rotationaxis>
+            <extents>0.044700 0.012400 0.015600</extents>
+            <diffuseColor>0.901961 0.772549 0.694118</diffuseColor>
+            <transparency>0.8</transparency>
+        </geom>
+    </body>
+
+
+
+    
+    <!-- ******************* UNIFIED LEG ***************************** -->
+    <!-- *********************************************************** -->
+
+
+    <body name="HipDummyX">
+        <offsetfrom>PelvisBody</offsetfrom>
+        <translation>0.022487 0 -0.086017</translation>
+        <geom type="sphere">
+            <radius>0.03</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+    <body name="HipDummyY">
+        <offsetfrom>HipDummyX</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="sphere">
+            <radius>0.03</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+
+    <body name="Femur">
+        <offsetfrom>HipDummyX</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="cylinder">
+            <translation>0.001611 0 -0.19619</translation>
+            <rotationaxis>1 0 0 90</rotationaxis>
+            <radius>0.1.3065</radius>
+            <height>0.18</height>
+            <diffuseColor>0.3 0.3 0.3</diffuseColor>
+        </geom>
+        <geom type="cylinder">
+            <translation>-0.012441 0 -0.390045</translation>
+            <rotationaxis>1 0 0 90</rotationaxis>
+            <radius>0.1005</radius>
+            <height>0.2149</height>
+            <diffuseColor>0.3 0.3 0.3</diffuseColor>
+        </geom>
+    </body>
+    
+    <body name="Tibia">
+        <offsetfrom>Femur</offsetfrom>
+        <translation>-0.024908  0 -0.468294</translation>
+        <geom type="cylinder">
+            <translation>-0.010975 0 -0.205403</translation>
+            <rotationaxis>1 0 0 90</rotationaxis>
+            <radius>0.10275</radius>
+            <height>0.3498</height>
+            <diffuseColor>0.3 0.3 0.3</diffuseColor>
+        </geom>
+    </body>
+ 
+     <body name="AnkleDummyX">
+        <offsetfrom>Tibia</offsetfrom>
+        <translation>-0.013991 0 -0.388599</translation>
+        <geom type="sphere">
+            <radius>0.03</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>   
+    <body name="AnkleDummyY">
+        <offsetfrom>AnkleDummyX</offsetfrom>
+        <translation>0 0 0</translation>
+        <geom type="sphere">
+            <radius>0.03</radius>
+            <transparency>1</transparency>
+        </geom>
+    </body>
+
+    <body name="Foot">
+        <offsetfrom>AnkleDummyY</offsetfrom>
+        <translation>0 0 0</translation>
+         <geom type="box">    
+            <translation>0.079913 0 -0.049723</translation>
+            <rotationaxis>0 0 1 90</rotationaxis>
+            <extents>0.1116 0.164 0.063</extents>
+            <diffuseColor>0.3 0.3 0.3</diffuseColor>
+        </geom>
+    </body>
+    
+
+<!--*********************************************************************-->
+<!--*********************************************************************-->
+<!--*********************************************************************-->
+<!--*********************************************************************-->
+<!--*********************************************************************-->
+<!--*********************************************************************-->
+ 
+    <joint name="PelvisTransX" type="slider">
+        <body>Base</body>
+        <body>PlevisDummyTransX</body>
+        <offsetfrom>PlevisDummyTransX</offsetfrom>
+<!--        <anchor>0 0 0</anchor>-->
+        <axis>1 0 0</axis>
+        <limits>-30 30</limits>
+    </joint>
+
+    <joint name="PelvisTransY" type="slider">
+        <body>PlevisDummyTransX</body>
+        <body>PlevisDummyTransY</body>
+        <offsetfrom>PlevisDummyTransY</offsetfrom>
+<!--        <anchor>0 0 0</anchor>-->
+        <axis>0 1 0</axis>
+        <limits>-30 30</limits>
+    </joint>
+
+    <joint name="PelvisTransZ" type="slider">
+        <body>PlevisDummyTransY</body>
+        <body>PlevisDummyTransZ</body>
+        <offsetfrom>PlevisDummyTransZ</offsetfrom>
+<!--        <anchor>0 0 0</anchor>-->
+        <axis>0 0 1</axis>
+        <limits>-30 30</limits>
+    </joint>
+
+    
+    <joint name="PelvisRotX" type="hinge">
+        <body>PlevisDummyTransZ</body>
+        <body>PlevisDummyRotX</body>
+        <offsetfrom>PlevisDummyRotX</offsetfrom>
+<!--        <anchor>0 0 0</anchor>-->
+        <axis>1 0 0</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+
+    <joint name="PelvisRotY" type="hinge">
+        <body>PlevisDummyRotX</body>
+        <body>PlevisDummyRotY</body>
+        <offsetfrom>PlevisDummyRotY</offsetfrom>
+<!--        <anchor>0 0 0</anchor>-->
+        <axis>0 1 0</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+    <joint name="PelvisRotZ" type="hinge">
+        <body>PlevisDummyRotY</body>
+        <body>PelvisBody</body>
+        <offsetfrom>PelvisBody</offsetfrom>
+<!--        <anchor>0.037432 0 0.139749</anchor>-->
+        <axis>0 0 1</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+
+    <joint name="TorsoX" type="hinge">
+        <body>PelvisBody</body>
+        <body>TorsoDummyX</body>
+        <offsetfrom>TorsoDummyX</offsetfrom>
+<!--        <anchor>0.037432 0 0.139749</anchor>-->
+        <axis>1 0 0</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+    <joint name="TorsoZ" type="hinge">
+        <body>TorsoDummyX</body>
+        <body>TorsoDummyY</body>
+        <offsetfrom>TorsoDummyY</offsetfrom>
+<!--        <anchor>0.037432 0 0.139749</anchor>-->
+        <axis>0 0 1</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+    <joint name="TorsoY" type="hinge">
+        <body>TorsoDummyY</body>
+        <body>TorsoDummyZ</body>
+        <offsetfrom>TorsoDummyZ</offsetfrom>
+<!--        <anchor>0.037432 0 0.139749</anchor>-->
+        <axis>0 1 0</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+
+    <joint name="rShoulderTransX" type="slider">
+        <body>TorsoDummyZ</body>
+        <body>TorsoDummyTransX</body>
+        <offsetfrom>TorsoDummyTransX</offsetfrom>
+        <axis>1 0 0</axis>
+        <limits>-0.50 0.50</limits>
+    </joint>
+    <joint name="rShoulderTransY" type="slider">
+        <body>TorsoDummyTransX</body>
+        <body>TorsoDummyTransY</body>
+        <offsetfrom>TorsoDummyTransY</offsetfrom>
+        <axis>0 1 0</axis>
+        <limits>-0.50 0.50</limits>
+    </joint>
+    <joint name="rShoulderTransZ" type="slider">
+        <body>TorsoDummyTransY</body>
+        <body>TorsoDummyTransZ</body>
+        <offsetfrom>TorsoDummyTransZ</offsetfrom>
+        <axis>0 0 1</axis>
+        <limits>-0.50 0.50</limits>
+    </joint>
+
+    <joint name="TorsoTrans" type="slider">
+        <body>TorsoDummyZ</body>
+        <body>Torso</body>
+        <offsetfrom>Torso</offsetfrom>
+        <axis>0 0 1</axis>
+        <limits>-0.50 0.50</limits>
+    </joint>
+    
+    <joint name="HeadZ" type="hinge">
+        <body>Torso</body>
+        <body>HeadDummyZ</body>
+        <offsetfrom>HeadDummyZ</offsetfrom>
+<!--        <anchor>0.023497 0 0.593966</anchor>-->
+        <axis>0 0 1</axis>
+        <limitsdeg>-45 45</limitsdeg>
+    </joint>
+
+    <joint name="HeadY" type="hinge">
+        <body>HeadDummyZ</body>
+        <body>HeadDummyY</body>
+        <offsetfrom>HeadDummyY</offsetfrom>
+<!--        <anchor>0.023497 0 0.593966</anchor>-->
+        <axis>0 -1 0</axis>
+        <limitsdeg>-60 30</limitsdeg>
+    </joint>
+    <joint name="HeadX" type="hinge">
+        <body>HeadDummyY</body>
+        <body>Head</body>
+        <offsetfrom>Head</offsetfrom>
+<!--        <anchor>0.023497 0 0.593966</anchor>-->
+        <axis>1 0 0</axis>
+        <limitsdeg>-45 45</limitsdeg>
+    </joint>
+    
+    <!-- ******************* RIGHT ARM ***************************** -->
+    <!-- *********************************************************** -->
+
+
+
+    <joint name="rShoulderX" type="hinge">
+        <body>Torso</body>
+        <body>rShoulderDummyX</body>
+        <offsetfrom>rShoulderDummyX</offsetfrom>
+<!--        <anchor>-0.0112 0.23982 0.428571</anchor>-->
+        <axis>1 0 0</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+    <joint name="rShoulderZ" type="hinge">
+        <body>rShoulderDummyX</body>
+        <body>rShoulderDummyZ</body>
+        <offsetfrom>rShoulderDummyZ</offsetfrom>
+<!--        <anchor>-0.0112 0.23982 0.428571</anchor>-->
+        <axis>0 0 1</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+    <joint name="rShoulderY" type="hinge">
+        <body>rShoulderDummyZ</body>
+        <body>rHumerus</body>
+        <offsetfrom>rHumerus</offsetfrom>
+<!--        <anchor>-0.0112 0.23982 0.428571</anchor>-->
+        <axis>0 -1 0</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+
+    <joint name="rArmTrans" type="slider">
+        <body>rHumerus</body>
+        <body>rElbowDummy</body>
+        <offsetfrom>rElbowDummy</offsetfrom>
+<!--        <anchor>-0.007033 0.446428 0.430224</anchor>-->
+        <axis>0 1 0</axis>
+        <limits>-0.50 0.50</limits>
+    </joint>
+    <joint name="rElbowZ" type="hinge">
+        <body>rElbowDummy</body>
+        <body>rRadius</body>
+        <offsetfrom>rRadius</offsetfrom>
+<!--        <anchor>-0.007033 0.446428 0.430224</anchor>-->
+        <axis>0 0 1</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+    
+   
+    <joint name="rWristX" type="hinge">
+        <body>rRadius</body>
+        <body>rWristDummyX</body>
+        <offsetfrom>rWristDummyX</offsetfrom>
+<!--        <anchor>-0.004259 0.697 0.43478</anchor>-->
+        <axis>-1 0 0</axis>
+        <limitsdeg>-90 90</limitsdeg>
+    </joint>
+
+    <joint name="rWristY" type="hinge">
+        <body>rWristDummyX</body>
+        <body>rWristDummyY</body>
+        <offsetfrom>rWristDummyY</offsetfrom>
+<!--        <anchor>-0.004259 0.697 0.43478</anchor>-->
+        <axis>0 -1 0</axis>
+        <limitsdeg>-180 0</limitsdeg>
+    </joint>
+    <joint name="rWristZ" type="hinge">
+        <body>rWristDummyY</body>
+        <body>rHand</body>
+        <offsetfrom>rHand</offsetfrom>
+<!--        <anchor>-0.004259 0.697 0.43478</anchor>-->
+        <axis>0 0 1</axis>
+        <limitsdeg>-40 40</limitsdeg>
+    </joint>
+    
+    <!-- ******************* LEFT ARM ***************************** -->
+    <!-- *********************************************************** -->
+    
+      
+    <joint name="lShoulderX" type="hinge">
+        <body>Torso</body>
+        <body>lShoulderDummyX</body>
+        <offsetfrom>lShoulderDummyX</offsetfrom>
+<!--        <anchor>-0.0112 0.23982 0.428571</anchor>-->
+        <axis>1 0 0</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+    <joint name="lShoulderZ" type="hinge">
+        <body>lShoulderDummyX</body>
+        <body>lShoulderDummyZ</body>
+        <offsetfrom>lShoulderDummyZ</offsetfrom>
+<!--        <anchor>-0.0112 0.23982 0.428571</anchor>-->
+        <axis>0 0 -1</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+    <joint name="lShoulderY" type="hinge">
+        <body>lShoulderDummyZ</body>
+        <body>lHumerus</body>
+        <offsetfrom>lHumerus</offsetfrom>
+<!--        <anchor>-0.0112 0.23982 0.428571</anchor>-->
+        <axis>0 -1 0</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+
+    <joint name="lArmTrans" type="slider">
+        <body>lHumerus</body>
+        <body>lElbowDummy</body>
+        <offsetfrom>lElbowDummy</offsetfrom>
+<!--        <anchor>-0.007033 0.446428 0.430224</anchor>-->
+        <axis>0 1 0</axis>
+        <limits>-0.50 0.50</limits>
+    </joint>
+    <joint name="lElbowZ" type="hinge">
+        <body>lElbowDummy</body>
+        <body>lRadius</body>
+        <offsetfrom>lRadius</offsetfrom>
+<!--        <anchor>-0.007033 0.446428 0.430224</anchor>-->
+        <axis>0 0 -1</axis>
+        <limitsdeg>-180 180</limitsdeg>
+    </joint>
+    
+   
+    <joint name="lWristX" type="hinge">
+        <body>lRadius</body>
+        <body>lWristDummyX</body>
+        <offsetfrom>lWristDummyX</offsetfrom>
+<!--        <anchor>-0.004259 0.697 0.43478</anchor>-->
+        <axis>-1 0 0</axis>
+        <limitsdeg>-90 90</limitsdeg>
+    </joint>
+
+    <joint name="lWristY" type="hinge">
+        <body>lWristDummyX</body>
+        <body>lWristDummyY</body>
+        <offsetfrom>lWristDummyY</offsetfrom>
+<!--        <anchor>-0.004259 0.697 0.43478</anchor>-->
+        <axis>0 -1 0</axis>
+        <limitsdeg>-180 0</limitsdeg>
+    </joint>
+    <joint name="lWristZ" type="hinge">
+        <body>lWristDummyY</body>
+        <body>lHand</body>
+        <offsetfrom>lHand</offsetfrom>
+<!--        <anchor>-0.004259 0.697 0.43478</anchor>-->
+        <axis>0 0 -1</axis>
+        <limitsdeg>-40 40</limitsdeg>
+    </joint>
+    
+    <!-- ******************* UNIFED LEG ***************************** -->
+    <!-- *********************************************************** -->
+
+   
+    <joint name="HipX" type="hinge">
+        <body>PelvisBody</body>
+        <body>HipDummyX</body>
+        <offsetfrom>HipDummyX</offsetfrom>
+<!--        <anchor>0.022487 -0.100975 -0.086017</anchor>-->
+        <axis>1 0 0</axis>
+        <limitsdeg>-100 10</limitsdeg>
+    </joint>
+ 
+    <joint name="HipY" type="hinge">
+        <body>HipDummyX</body>
+        <body>HipDummyY</body>
+        <offsetfrom>HipDummyY</offsetfrom>
+<!--        <anchor>0.022487 -0.100975 -0.086017</anchor>-->
+        <axis>0 1 0</axis>
+        <limitsdeg>-150 60</limitsdeg>
+    </joint>
+    <joint name="HipZ" type="hinge">
+        <body>HipDummyY</body>
+        <body>Femur</body>
+        <offsetfrom>Femur</offsetfrom>
+<!--        <anchor>0.022487 -0.100975 -0.086017</anchor>-->
+        <axis>0 0 1</axis>
+        <limitsdeg>-40 40</limitsdeg>
+    </joint>
+
+    
+    <joint name="Knee" type="hinge">
+        <body>Femur</body>
+        <body>Tibia</body>
+        <offsetfrom>Tibia</offsetfrom>
+<!--        <anchor>-0.002421 -0.097751 -0.554311</anchor>-->
+        <axis>0 1 0</axis>
+        <limitsdeg>0 140</limitsdeg>
+    </joint>
+      
+     <joint name="AnkleX" type="hinge">
+        <body>Tibia</body>
+        <body>AnkleDummyX</body>
+        <offsetfrom>AnkleDummyX</offsetfrom>
+<!--        <anchor>-0.016412 -0.092302 -0.94291</anchor>-->
+        <axis>1 0 0</axis>
+        <limitsdeg>-20 20</limitsdeg>
+    </joint>
+
+    <joint name="AnkleY" type="hinge">
+        <body>AnkleDummyX</body>
+        <body>AnkleDummyY</body>
+        <offsetfrom>AnkleDummyY</offsetfrom>
+<!--        <anchor>-0.016412 -0.092302 -0.94291</anchor>-->
+        <axis>0 1 0</axis>
+        <limitsdeg>-30 30</limitsdeg>
+    </joint>
+    <joint name="AnkleZ" type="hinge">
+        <body>AnkleDummyY</body>
+        <body>Foot</body>
+        <offsetfrom>Foot</offsetfrom>
+<!--        <anchor>-0.016412 -0.092302 -0.94291</anchor>-->
+        <axis>0 0 1</axis>
+        <limitsdeg>-40 40</limitsdeg>
+    </joint>
+    
+    
+    <!-- Adjacent Bodies -->
+
+    <!-- Torso -->
+    <!-- Body_Torso 
+    <adjacent>Body_Torso Body_Hip</adjacent> -->
+
+</kinbody>
+</robot>

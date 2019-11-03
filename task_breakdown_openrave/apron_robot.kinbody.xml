@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<kinbody name = "Apron_bot">
+
+ <body name="body">
+    <Geom type="box">
+      <extents>0.035 0.12 0.45</extents>
+      <diffuseColor>.2 .2 1</diffuseColor>
+    </Geom>
+ </body>
+ 
+ <body name="left_strap">
+    <Geom type="box">
+      <extents> 0.25 0.005 0.015</extents>
+      <diffuseColor> 0 0 0</diffuseColor>
+    </Geom>
+    <offsetfrom>body</offsetfrom>
+    <translation>0.25 0.12 0.4 </translation>
+ </body>
+ 
+ <joint name="j1" type="hinge">
+   <Body>body</Body>
+   <Body>left_strap</Body>
+   <Anchor>0 0 0</Anchor>
+   <Axis>1 0 0</Axis>
+   <Weight>1.0</Weight>
+   <maxtorque>10</maxtorque>
+ </joint>
+ 
+ <body name="right_strap">
+    <Geom type="box">
+      <extents> 0.25 0.005 0.015</extents>
+      <diffuseColor> 0 0 0</diffuseColor>
+    </Geom>
+    <offsetfrom>body</offsetfrom>
+    <translation>0.25 -0.12 0.4 </translation>
+ </body>
+ 
+ <joint name="j2" type="hinge">
+   <Body>body</Body>
+   <Body>right_strap</Body>
+   <Anchor>0 0 0</Anchor>
+   <Axis>1 0 0</Axis>
+   <Weight>1.0</Weight>
+   <maxtorque>10</maxtorque>
+ </joint>
+
+ <body name="back_strap">
+    <Geom type="box">
+      <extents>0.035 0.12 0.015 </extents>
+      <diffuseColor>0 0 0</diffuseColor>
+    </Geom>
+    <offsetfrom>right_strap</offsetfrom>
+    <translation>0.25 0.12 0.0</translation>
+ </body>
+ <joint name="j3" type="hinge">
+  <Body>right_strap</Body>
+  <Body>back_strap</Body>
+  <Anchor>0 0 0</Anchor>
+  <Axis>1 0 0</Axis>
+  <Weight>1.0</Weight>
+  <maxtorque>10</maxtorque>
+ </joint>
+</kinbody>
+
+
+  
