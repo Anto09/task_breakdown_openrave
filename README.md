@@ -20,8 +20,12 @@ This repository contains the following:
   2. Modified Rethink Baxter XML model configuration files
   3. Created Rethink Baxter and human DAE model configuration files (for OpenRave)
      - OpenRAVE did not have Baxter in its library of robots before this project
-  4. Test data and models 
-  5. Backups
+  3. Equipment to be removed as static robot models
+  4. Meshes for collision detection
+  5. Planning scripts and utilities
+  6. ROS (https://www.ros.org/) scripts
+  7. Test data and models 
+  8. Backups
   
  This repository is not meant to be downloaded, built, and used, and only serves as the storage of all the files outlined above.
  
